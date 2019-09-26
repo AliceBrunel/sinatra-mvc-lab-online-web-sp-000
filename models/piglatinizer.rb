@@ -19,7 +19,7 @@ class PigLatinizer
         string << word + "way" + " "
 
       elsif !is_wovel(first_letter) && !is_wovel(second_letter) && !is_wovel(third_letter)
-        word[0..3] = ""
+        word[0..2] = ""
         string << word + first_letter + second_letter + third_letter + "ay" + " "
 
       elsif !is_wovel(first_letter) && !is_wovel(second_letter) && is_wovel(third_letter)
